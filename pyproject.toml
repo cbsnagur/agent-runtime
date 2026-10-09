@@ -1,0 +1,15 @@
+[project]
+name = "agent-runtime"
+version = "0.1.0"
+description = "A small, production-shaped runtime for tool-using agents: evals, durable execution, tool security and tracing."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic"]
+openai = ["openai"]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
